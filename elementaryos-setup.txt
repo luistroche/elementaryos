@@ -2,5 +2,15 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git
 sudo apt-get install gedit
-sudo apt-get install  linux-image-3.8.0-39-generic
+#
+#this kernel image has some issues if instaled on lenovo g510
+#sudo apt-get install  linux-image-3.8.0-39-generic
+
+#this worked very well	
+sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-xorg-lts-saucy libgl1-mesa-glx-lts-saucy
+
+#try to make hdmi sound work for intel hd 4600.
+#After upgrading the kernel and installing pulse audio control hdmi is #recognized instantly
+
+sudo apt-get install pavucontrol
 
