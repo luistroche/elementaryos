@@ -14,3 +14,12 @@ sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-
 
 sudo apt-get install pavucontrol
 
+# removing midori
+sudo apt-get remove midori*
+
+#installing google chrome
+
+sudo apt-get install libxss1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
