@@ -31,13 +31,21 @@ sudo apt-get install hardinfo
 
 # removing midori
 #sudo apt-get remove midori-granite
-# removes elementary-default-settings (not good)
+# After uninstalling realize it removes elementary-default-settings (not good)
+#so, I intalled midori-granite back again
 
 #installing google chrome
 
 sudo apt-get install libxss1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+#installing pipelight to enable flash, silver-light, and shockwave
+sudo apt-add-repository ppa:pipelight/stable
+sudo apt-get-update
+sudo apt-get install pipelight-multi
+pipelight-plugin --enable silverlight
+pipelight-plugin --enable flash
 
 
 # installing basic libre office suite.
