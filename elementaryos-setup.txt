@@ -2,6 +2,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git
 sudo apt-get install gedit
+sudo apt-get install ssh
 #
 #this kernel image has some issues if instaled on lenovo g510
 #sudo apt-get install  linux-image-3.8.0-39-generic
@@ -14,8 +15,23 @@ sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-
 
 sudo apt-get install pavucontrol
 
+
+
+#installing dconf-tools
+
+sudo apt-get install dconf-tools 
+
+#install systeminfo software (hardinfo)
+
+sudo apt-get install hardinfo
+
+#install docky 
+#docky nightmare
+#sudo apt-get install docky
+
 # removing midori
-sudo apt-get remove midori*
+#sudo apt-get remove midori-granite
+# removes elementary-default-settings (not good)
 
 #installing google chrome
 
@@ -23,3 +39,15 @@ sudo apt-get install libxss1
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+
+# installing basic libre office suite.
+
+sudo apt-get install libreoffice
+
+
+#installing spotify
+
+sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+sudo apt-get update
+sudo apt-get install spotify-client
