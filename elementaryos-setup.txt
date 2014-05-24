@@ -10,6 +10,21 @@ sudo apt-get install ssh
 #this worked very well	
 sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-xorg-lts-saucy libgl1-mesa-glx-lts-saucy
 
+#install firewall and firewall interface.
+sudo apt-get install gufw
+
+#set firewall deny rule
+
+#activate firewall
+
+#activate firewall
+
+#installing oracle java
+
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+
 #try to make hdmi sound work for intel hd 4600.
 #After upgrading the kernel and installing pulse audio control hdmi is #recognized instantly
 
@@ -41,11 +56,14 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 #installing pipelight to enable flash, silver-light, and shockwave
+#after installation I need to spoof browser user-agent on some web-sites.
 sudo apt-add-repository ppa:pipelight/stable
 sudo apt-get-update
 sudo apt-get install pipelight-multi
 pipelight-plugin --enable silverlight
 pipelight-plugin --enable flash
+
+
 
 
 # installing basic libre office suite.
@@ -59,3 +77,17 @@ sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 sudo apt-get update
 sudo apt-get install spotify-client
+
+
+#install disk utilitie
+sudo apt-get install palimpsest
+
+
+#finishing up
+
+sudo apt-get -f install
+
+sudo apt-get -y autoremove
+
+sudo apt-get -y autoclean
+sudo apt-get -y check
