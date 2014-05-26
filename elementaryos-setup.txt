@@ -8,7 +8,9 @@ sudo apt-get install -y ssh
 #sudo apt-get install  linux-image-3.8.0-39-generic
 
 #this worked very well	
-sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-xorg-lts-saucy libgl1-mesa-glx-lts-saucy
+#sudo apt-get install --install-recommends linux-image-generic-lts-saucy xserver-xorg-lts-saucy libgl1-mesa-glx-lts-saucy
+
+sudo apt-add-repository ppa:versable/elementary-update
 
 #install firewall and firewall interface.
 sudo apt-get -y install gufw
@@ -80,8 +82,11 @@ sudo apt-get install spotify-client
 
 
 #install disk utilitie
-sudo apt-get install palimpsest
+sudo apt-get install gnome-disk-utility
 
+
+#removing unwanted programs
+apt-get remove scratch-text-editor
 
 #finishing up
 
@@ -91,3 +96,16 @@ sudo apt-get -y autoremove
 
 sudo apt-get -y autoclean
 sudo apt-get -y check
+
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+sudo apt-get -y install elementary-dark-theme elementary-plastico-theme elementary-whit-e-theme elementary-harvey-theme elementary-blue-theme elementary-colors-theme elementary-lion-theme elementary-champagne-theme elementary-milk-theme elementary-emod-icons elementary-elfaenza-icons elementary-nitrux-icons elementary-enumix-utouch-icons elementary-plank-themes wingpanel-slim indicator-synapse elementary-tweaks
+sudo atp-get install  vlc
+
+
+sudo apt-get -y install fgsfonts-x11 libxine1-ffmpeg gxine mencoder mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 libjpeg-progs flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview flac libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev libquicktime2 gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-sdl gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-bad gstreamer0.10-plugins-ugly totem-plugins-extra gstreamer-dbus-media-service gstreamer-tools ubuntu-restricted-extras ttf-mscorefonts-installer
+
+
+sudo apt-get install unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack lha arj cabextract file-roller
+
+
+
