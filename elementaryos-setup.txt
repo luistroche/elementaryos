@@ -15,11 +15,17 @@ sudo apt-add-repository ppa:versable/elementary-update
 #install firewall and firewall interface.
 sudo apt-get -y install gufw
 
+#set up firewall defaults
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
 #set firewall deny rule
+sudo ufw allow ssh
+sudo ufw allow 443/tcp # skype
 
 #activate firewall
-
-#activate firewall
+sudo ufw enable
+sudo ufw status
 
 #installing oracle java
 
