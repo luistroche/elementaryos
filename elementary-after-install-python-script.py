@@ -21,7 +21,7 @@ aptget = "apt-get"
 aptadd = "apt-add-repository"
 aptkey = ("apt-key", "adv", "--keyserver", "keyserver.ubuntu.com", "--recv-keys")
 installer = [yo, aptget]
-needed_repositories = ["ppa:webupd8team/java","ppa:pipelight/stable", "ppa:versable/elementary-update", "deb http://repository.spotify.com stable non-free"]
+needed_repositories = ["ppa:webupd8team/java", "ppa:pipelight/stable", "ppa:versable/elementary-update", "deb http://repository.spotify.com stable non-free"]
 
 repo_keys = ["94558F59"]
 
