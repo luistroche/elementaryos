@@ -26,7 +26,7 @@ needed_repositories = ["ppa:webupd8team/java", "ppa:pipelight/stable", "ppa:vers
 repo_keys = ["94558F59"]
 
 system_packages = ["linux-image-generic-lts-sausy", "xserver-xorg-lts-saucy", "libgl1-mesa-glx-lts-saucy"]
-regular_packages = ["git", "gedit", "gedit-plugins", "ssh", "gufw", "oracle-java7-installer", "libreoffice", "libxss1", "dconf-tools", "hardinfo", "pavucontrol", "thunderbird", "firefox", "chromium-browser", "vlc", "flashplugin-installer", "gnome-disk-utility", "gtk2-engines-pixbuf", "spotify-client",]
+regular_packages = ["git", "gedit", "gedit-plugins", "ssh", "gufw", "oracle-java7-installer", "libreoffice", "libxss1", "dconf-tools", "hardinfo", "pavucontrol", "thunderbird", "firefox", "chromium-browser", "vlc", "flashplugin-installer", "gnome-disk-utility", "gtk2-engines-pixbuf", "python-setuptools", "python-pip", "spotify-client",]
 y = "-y"
 checker = True
 counter = ""

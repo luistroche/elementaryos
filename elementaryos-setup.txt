@@ -90,6 +90,11 @@ sudo apt-get install spotify-client
 #install disk utilitie
 sudo apt-get install gnome-disk-utility
 
+#python tools
+
+sudo apt-get install python-setuptools
+sudo apt-get install python-pip
+
 
 #removing unwanted programs
 apt-get remove scratch-text-editor
