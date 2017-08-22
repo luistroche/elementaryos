@@ -1,11 +1,9 @@
 Elementary-os
 ============
 
-The main idea is to create a small script,coded on python for bash, which is suppose to have the ability to automate the configuration steps I usually take after installing Elementary-OS.
+The main idea is to create a small script,coded on python for bash, which will have the ability configurate a basic system  after installing Elementary-OS.
 Why to do this?, Two reasons.
-Elementary-Os Operating System which I like very much. I would like to install it on my production computers (for web development), but I found out that it has this tendency to get mis-configured easily (apt-get and essential files)
-I need to make some test so I can get to trust the OS.
-The second reason is to practice my coding skills with Python and Bash.
+I would like to install it on my production computers (for web development), but I found out that it has the tendency to get un-configured easily after some time .(apt-get and essential files). The other reason is playing a little with The OS on testing mode(virtual machine).
 To succeed on my plans I use Virtual-box with different OS's clones.
 
 La idea principal es crear un pequeño script, el cual tendrá la funcion de automatizar todos los pasos que siguen a la instalación de ElementaryOs.
